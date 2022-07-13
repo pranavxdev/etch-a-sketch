@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "montserrat";
+  background-color: #ededed;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header {
+  font-size: 48px;
+  margin-top: 24px;
+}
+
+.tools-container {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 5px;
+  font-weight: 400;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#artboardContainer {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 54px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+/* animations */
+
+.cell:hover {
+  background-color: black;
+}
